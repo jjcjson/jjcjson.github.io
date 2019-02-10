@@ -4,7 +4,7 @@
         top: 0;
         display: block;
     }
-    li#nav a {
+    li.nav a {
         border-right: 1px solid white;
         display: inline-block;
         text-align: center;
@@ -12,14 +12,14 @@
         width: 10%;
         float: left;
     }
-    li#nav a:last-child {
+    li.nav a:last-child {
         border-right: none;
     }
-    li#nav.menu a {
+    li.nav.menu a {
         display: inline-block;
         float: left;
     }
-    li#nav.active a {
+    li.nav.active a {
         background-color: #ffff66;
         color: black;
     }
