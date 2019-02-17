@@ -1,4 +1,3 @@
-function current() {
     var d1 = new Date();
     var day = d1.getDate();
     var month = d1.getMonth();
@@ -16,5 +15,4 @@ function current() {
     var monthname = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     // Output the date in a readable format.
     var dateString = weekday[wd] + ", " + day + " " + monthname[month] + ", " + year;
-    document.getElementById("current").innerHTML = d1;
-  }
+    document.getElementById("current").innerHTML = dateString;

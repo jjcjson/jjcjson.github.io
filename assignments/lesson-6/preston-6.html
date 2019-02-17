@@ -35,7 +35,9 @@
         <hr>
         <section class="hero">
             <picture>
-                <source media="(min-width=600px)" srcset="images/heroimage.jpeg">
+                <source media="(min-width=900px)" srcset="images/hero600.jpeg">
+                <source media="(min-width=600px)" srcset="images/hero600.jpeg">
+                <source media="(max-width=599px)" srcset="images/hero300.jpeg">
                 <img src="images/heroimage.jpeg" alt="hero image">
             </picture>
         </section>
@@ -60,7 +62,7 @@
         <hr>
         <section class="article">
             <article>
-                <h3>Wild Litter of Puppies Found!</h3>
+                <h3>Litter of Puppies Found!</h3>
                 <i>By Kent Kingsleigh</i>
                 <p>Good families wanted! Ol' Farmer Higgins found a litter of puppies earlier this week behind the cafe on third street. "I was just eating my sandwich, and I heard some noises out back. I didn't think much but to just check it out. I'm so glad I did! These buggers are so cute!" Fortunately for all of us, Farmer Higgins can't house all of them and is putting up most of them up for adoption. Families wishing to adopt puppies are encouraged to inquire at the Police Station.</p>
             </article>
@@ -70,7 +72,7 @@
         
         <section>
             &copy;2020 Heaven's Sentinels | Attributions | Jeremy Johnson <br>
-            <p id="current" onload="footerDate()"></p>
+            <span id="current" onload="footerDate()"></span>
         </section>
     </footer>
     <script src="scripts/hamburger.js"></script>
