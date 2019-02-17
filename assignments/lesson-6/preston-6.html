@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head lang="en-us">
+    <meta charset="utf-8">
+    <title>Preston Weather Page</title>
+    <meta name="description" content="Describes the weather for the Preston township">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <script src="scripts/currentDate.js"></script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="images/logo.png" alt="Heaven's Sentinels">
+            <div class="title"><h1 class="website-title">Heaven's Sentinels</h1>
+                <i>Ever Vigilant, Ever Watchful</i>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id="important" class="nav">
+            <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
+            <li class="nav"><a href="#home">Home</a></li>
+            <li class="active nav"><a href="#preston">Preston</a></li>
+            <li class="nav"><a href="#sodasprings">Soda Springs</a></li>
+            <li class="nav"><a href="#fishhaven">Fish Haven</a></li>
+            <li class="nav"><a href="#stormcenter">Storm Center</a></li>
+            <li class="nav"><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town_name">PRESTON</h2>
+        <hr>
+        <section class="hero">
+            <picture>
+                <source media="(min-width=600px)" srcset="images/heroimage.jpeg">
+                <img src="images/heroimage.jpeg" alt="hero image">
+            </picture>
+        </section>
+        <hr>
+        <p>A little story about the hero of the week. A little story about the hero of the week. A little story about the hero of the week. A little story about the hero of the week. A little story about the hero of the week.</p>
+        <section class="forecast">
+            <h2>THIS WEEK'S FORECAST</h2>
+            <div><img src="images/stormy.jpg" alt="today"><u>Today</u><br>28&deg; High</div>
+            <div><img src="images/overcast.png" alt="sunday"><u>Tomorrow</u><br>42&deg; High</div>
+            <div><img src="images/sunny-with-clouds.png" alt="monday"><u>Monday</u><br>32&deg; High</div>
+            <div><img src="images/sunny.png" alt="tuesday"><u>Tuesday</u><br>50&deg; High</div>
+            <div><img src="images/sunny.png" alt="wednesday"><u>Wednesday</u><br>72&deg; High</div>
+        </section>
+        <hr>
+        <section class="article">
+            <article>
+                <h3>Warm Weather Wandering In</h3>
+                <i>By Juniper B. Jones</i>
+                <p>Thank goodness, the cold weather is finally on its way out. We have a warm front heading in that should put smiles on everyone's faces. As welcome as this warm weather is, no one appreciates it more than our local mayor. Mayor Smith has been planning all winter for the festival this weekend and cold weather would've put a freeze to all of his plans. Smith admits to saying, "I'd light the whole city on fire if I had to! These roads need to be clear for our big parade!" Luckily, our town of Preston will keep on standing because of this beautiful weather.</p>
+            </article>
+        </section>
+        <hr>
+        <section class="article">
+            <article>
+                <h3>Wild Litter of Puppies Found!</h3>
+                <i>By Kent Kingsleigh</i>
+                <p>Good families wanted! Ol' Farmer Higgins found a litter of puppies earlier this week behind the cafe on third street. "I was just eating my sandwich, and I heard some noises out back. I didn't think much but to just check it out. I'm so glad I did! These buggers are so cute!" Fortunately for all of us, Farmer Higgins can't house all of them and is putting up most of them up for adoption. Families wishing to adopt puppies are encouraged to inquire at the Police Station.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+        <section>
+            &copy;2020 Heaven's Sentinels | Attributions | Jeremy Johnson <br>
+            <p id="current" onload="footerDate()"></p>
+        </section>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+</body>
+</html>
