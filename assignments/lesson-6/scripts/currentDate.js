@@ -18,7 +18,3 @@ function current() {
     var dateString = weekday[wd] + ", " + day + " " + monthname[month] + ", " + year;
     document.getElementById("current").innerHTML = d1;
   }
-funtion jfjjf() {
-  var today = new Date();
-  
-}

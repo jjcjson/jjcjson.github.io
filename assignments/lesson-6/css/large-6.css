@@ -47,9 +47,6 @@
         align-items: center;
         align-content: center;
     }
-    div.forecast_data {
-        
-    }
     img.todays_forecast {
         max-width: 75px;
         height: auto;
