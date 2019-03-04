@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Preston Weather Page</title>
+    <meta name="description" content="Describes the weather for the Preston township">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="images/logo.png" alt="Heaven's Sentinels">
+            <div class="title"><h1 class="website-title">Heaven's Sentinels</h1>
+                <i>Ever Vigilant, Ever Watchful</i>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id="important" class="nav">
+            <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
+            <li class="nav"><a href="#home">Home</a></li>
+            <li class="active nav"><a href="preston-8.html">Preston</a></li>
+            <li class="nav"><a href="#sodasprings">Soda Springs</a></li>
+            <li class="nav"><a href="#fishhaven">Fish Haven</a></li>
+            <li class="nav"><a href="stormcenter.html">Storm Center</a></li>
+            <li class="nav"><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town_name">PRESTON</h2>
+        <hr>
+        <section class="hero">
+            <picture>
+                <source media="(min-width=900px)" srcset="images/hero600.jpeg">
+                <source media="(min-width=600px)" srcset="images/hero600.jpeg">
+                <source media="(max-width=599px)" srcset="images/hero300.jpeg">
+                <img src="images/heroimage.jpeg" alt="hero image">
+            </picture>
+        </section>
+        <hr>
+        <section class="forecast">
+            <h2>THIS WEEK'S FORECAST</h2>
+            <div><img src="images/stormy.jpg" alt="today"><u>Today</u><br><i id="temperature1">28</i>&deg; High<br><i id="speed1">8</i>mph<br><span id="chill1"></span></div><hr>
+            <div><img src="images/overcast.png" alt="sunday"><u>Tomorrow</u><br><i id="temperature2">42</i>&deg; High<br><i id="speed2">10</i>mph<br><span id="chill2"></span></div><hr>
+            <div><img src="images/sunny-with-clouds.png" alt="monday"><u>Monday</u><br><i id="temperature3">38</i>&deg; High<br><i id="speed3">30</i>mph<br><span id="chill3"></span></div><hr>
+            <div><img src="images/sunny.png" alt="tuesday"><u>Tuesday</u><br><i id="temperature4">50</i>&deg; High<br><i id="speed4">15</i>mph<br><span id="chill4"></span></div><hr>
+            <div><img src="images/sunny.png" alt="wednesday"><u>Wednesday</u><br><i id="temperature5">46</i>&deg; High<br><i id="speed5">20</i>mph<br><span id="chill5"></span></div><hr>
+        </section>
+        <hr>
+            <article>
+                <h3>Warm Weather Wandering In</h3>
+                <i>By Juniper B. Jones</i>
+                <p>Thank goodness, the cold weather is finally on its way out. We have a warm front heading in that should put smiles on everyone's faces. As welcome as this warm weather is, no one appreciates it more than our local mayor. Mayor Smith has been planning all winter for the festival this weekend and cold weather would've put a freeze to all of his plans. Smith admits to saying, "I'd light the whole city on fire if I had to! These roads need to be clear for our big parade!" Luckily, our town of Preston will keep on standing because of this beautiful weather.</p>
+            </article>
+        <hr>
+            <article>
+                <h3>Litter of Puppies Found!</h3>
+                <i>By Kent Kingsleigh</i>
+                <p>Good families wanted! Ol' Farmer Higgins found a litter of puppies earlier this week behind the cafe on third street. "I was just eating my sandwich, and I heard some noises out back. I didn't think much but to just check it out. I'm so glad I did! These buggers are so cute!" Fortunately for all of us, Farmer Higgins can't house all of them and is putting up most of them up for adoption. Families wishing to adopt puppies are encouraged to inquire at the Police Station.</p>
+            </article>
+    </main>
+    <footer>
+        <div>
+            <p>Contact us at:<br>
+            30 N 1st E<br>
+            Preston, ID 83263<br>
+            Or,<br>
+            999-999-9999<br>
+            www.hsentinels.com</p>
+            <img src="images/map.jpg" alt="map of local area" id="local">
+        </div>
+        &copy;2020 Heaven's Sentinels | Attributions | Jeremy Johnson <br>
+        <span id="current"></span>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
