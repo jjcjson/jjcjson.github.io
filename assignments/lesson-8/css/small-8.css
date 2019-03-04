@@ -73,6 +73,7 @@ section.forecast {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    width: 80vw;
 }
 legend {
     background-color: #000066;
