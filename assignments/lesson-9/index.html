@@ -2,14 +2,13 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title>Gallery Page</title>
+    <title>Preston Weather Page</title>
     <meta name="description" content="Describes the weather for the Preston township">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-8.css">
-    <link rel="stylesheet" href="css/medium-8.css">
-    <link rel="stylesheet" href="css/large-8.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
 </head>
 <body>
     <header>
@@ -23,37 +22,21 @@
     <nav>
         <ul id="important" class="nav">
             <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
-            <li class="nav"><a href="#home">Home</a></li>
-            <li class="nav"><a href="preston-8.html">Preston</a></li>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="active nav"><a href="preston-9.html">Preston</a></li>
             <li class="nav"><a href="#sodasprings">Soda Springs</a></li>
             <li class="nav"><a href="#fishhaven">Fish Haven</a></li>
             <li class="nav"><a href="stormcenter.html">Storm Center</a></li>
-            <li class="active nav"><a href="gallery-8.html">Gallery</a></li>
+            <li class="nav"><a href="gallery-9.html">Gallery</a></li>
         </ul>
     </nav>
-    <main class="gallery">
-        <h2 class="town_name">Weather Gallery</h2>
-        <hr>
-        <section class="gallery">
-            <figure class="pic">
-                <img src="images/sunny-sky.jpg" alt="sunny sky"><figcaption>A Sunny Day in Preston</figcaption>
-            </figure>
-            <figure class="pic">
-                <img src="images/hero600.jpeg" alt="beautiful sky"><figcaption>Fish Haven on one great day</figcaption>
-            </figure>
-            <figure class="pic">
-                <img src="images/rainbow-sky.jpg" alt="rainbow sky"><figcaption>Soda Springs after a fresh rainfall</figcaption>
-            </figure>
-            <figure class="pic">
-                <img src="images/rainy-sky.jpg" alt="rainy sky"><figcaption>Preston getting some needed rain</figcaption>
-            </figure>
-            <figure class="pic">
-                <img src="images/snowy-road.jpg" alt="snowy sky"><figcaption>Winter in full swing this year</figcaption>
-            </figure>
-            <figure class="pic">
-                <img src="images/stormy-road.png" alt="stormy sky"><figcaption>An example storm that would need to be reported</figcaption>
-            </figure>
-        </section>
+    <main class="homepage">
+        <!--Begin JSON Town DATA-->
+        <article id="townData">
+
+        </article>
+        <!--END JSON Town DATA-->
+        
     </main>
     <footer>
         <div>
@@ -70,5 +53,6 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentDate.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>

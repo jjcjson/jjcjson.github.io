@@ -36,6 +36,9 @@
     main.gallery {
         max-width: 800px;
     }
+    main.homepage {
+        max-width: 1000px;
+    }
     footer {
         width: 100%;
         text-align: center;
@@ -126,5 +129,9 @@
         grid-column: 3 / 4;
         border: solid medium black;
         margin: 10px;
+    }
+    /* Home Page */
+    article#townData {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
