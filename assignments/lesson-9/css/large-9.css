@@ -37,7 +37,9 @@
         max-width: 800px;
     }
     main.homepage {
-        max-width: 1000px;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
     footer {
         width: 100%;
@@ -133,5 +135,9 @@
     /* Home Page */
     article#townData {
         grid-template-columns: repeat(3, 1fr);
+        max-width: 75vw;
+    }
+    #townData h5 {
+        font-size: 2vw;
     }
 }

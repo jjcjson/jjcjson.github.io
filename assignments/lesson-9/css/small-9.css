@@ -95,6 +95,8 @@ footer {
     padding-bottom: 0;
     border-bottom: 0;
     height: auto;
+    position: relative;
+    bottom: 0;
 }
 footer > div {
     display: none;
@@ -126,24 +128,34 @@ article#townData {
     margin-top: 40px;
     padding: 20px 30px;
     max-width: 1000px;
+    margin-bottom: 40px;
 }
 #townData div {
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px lightgray;
-    margin: auto;
-    grid-gap: 15px;
+    margin: 0;
+    grid-gap: 10px;
+    width: fit-content;
 }
 #townData h5 {
     color: #000066;
+    font-size: 5vw;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
 }
 #townData h6 {
     color: #000066;
-    padding: 0 10px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 #townData p {
     margin: 0;
     padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
 }
 #townData p:first-of-type {
     border-top: thin lightgray solid;
@@ -156,4 +168,34 @@ article#townData div:nth-of-type(2) {
 }
 article#townData div:nth-of-type(3) {
     order: 2;
+}
+img.homephoto {
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    bottom: 0;
+}
+div.homehero {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 10px;
+}
+.homehero img {
+    position: static;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+.homehero h2 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: .3rem 2%;
+    z-index: 1;
+    top: 30%;
+    left: 5%;
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
 }

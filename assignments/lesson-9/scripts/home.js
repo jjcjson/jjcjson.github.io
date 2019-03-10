@@ -37,17 +37,17 @@ function showData(jsonObj) {
             myArticle.appendChild(myImage);
 
             if (data[i].name == 'Preston') {
-                myImage.src = 'images/hpreston.jpg';
+                myImage.src = 'images/tree400.jpg';
             myImage.setAttribute('class', 'homephoto');
             myImage.setAttribute('alt', 'Preston Photo');
             }
             if (data[i].name == 'Soda Springs') {
-                myImage.src = 'images/hsoda.jpg';
+                myImage.src = 'images/cafe400.jpg';
             myImage.setAttribute('class', 'homephoto');
             myImage.setAttribute('alt', 'Soda Springs Photo');
             }
             if (data[i].name == 'Fish Haven') {
-                myImage.src = 'images/hfish.jpg';
+                myImage.src = 'images/fishing400.jpg';
             myImage.setAttribute('class', 'homephoto');
             myImage.setAttribute('alt', 'Fish Haven Photo');
             }
