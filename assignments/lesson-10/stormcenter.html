@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Storm Center Reports</title>
+    <meta name="description" content="Form to fill out reports on storms in the local area">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script>function ratinginput(rating) {document.getElementById('rvalue').innerHTML = rating;}</script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="images/logo.png" alt="Heaven's Sentinels">
+            <div class="title"><h1 class="website-title">Heaven's Sentinels</h1>
+                <i>Ever Vigilant, Ever Watchful</i>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id="important" class="nav">
+            <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="preston-10.html">Preston</a></li>
+            <li class="nav"><a href="#sodasprings">Soda Springs</a></li>
+            <li class="nav"><a href="#fishhaven">Fish Haven</a></li>
+            <li class="active nav"><a href="stormcenter.html">Storm Center</a></li>
+            <li class="nav"><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town_name">Storm Center</h2>
+        <form id="form" action="thanks.html">
+            <h3>Help others stay safe by reporting any storms you've seen recently:</h3>
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                    <label for="fname">Full Name:</label>
+                    <input type="text" required pattern="[A-Z][A-Za-z -._]+{5,99}" minlength="5" name="fullname" id="fname"><br>
+                    
+                    <label for="femail">Email:</label>
+                    <input type="email" placeholder="hsentinels@hs.com" name="email" id="femail"><br>
+                    
+                    <label for="ftel">Preferred Phone:</label>
+                    <input type="tel" required name="telephone" id="ftel"><br>
+                    
+                    <label for="fzip">Zip Code:</label>
+                    <input type="number" name="zip" required id="fzip" placeholder="83263"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Storm Details</legend>
+                    <label for="fdate">Observation Date:</label>
+                    <input type="date" name="stormdate" id="fdate"><br>
+                    
+                    <label for="ftype">Storm Type:</label>
+                    <input list="stormselect" name="stormtype" id="ftype"><br>
+                    <datalist id="stormselect">
+                        <option value="Tornado"></option>
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                    </datalist>
+                    
+                    <label for="fseverity">Severity (1 to 10):</label>
+                    <input type="range" name="severity" id="fseverity" value="5" min="0" max="10" step="1" oninput="ratinginput(this.value)" onchange="ratinginput(this.value)">
+                    <span id="rvalue">5</span><br>
+                    
+                    <label for="fregion">Region:</label>
+                    <select name="region" id="fregion"><br>
+                        <option value="" disabled selected>--Please Select a Region--</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                    </select>
+
+                    <div id="dangerzone">
+                        <i>Were you in Danger?</i><br>
+                        <label for="fdanger">Yes</label>
+                        <input type="radio" name="danger" id="fdanger" value="yes"><br>
+                        <label for="fmaymay">Maybe</label>
+                        <input type="radio" name="danger" id="fmaymay" value="maybe"><br>
+                        <label for="fno">No</label>
+                        <input type="radio" name="danger" id="fno" value="no"><br>
+                    </div>
+
+                    <label for="fcomments">Further Comments:</label>
+                    <textarea name="comments" id="fcomments" rows="6" cols="50" wrap="hard"></textarea><br>
+            </fieldset>
+            <button class="submit" form="form">Submit</button>
+
+        </form>
+        <br><br><br><br><br>
+    </main>
+    <footer>
+        <div>
+            <p>Contact us at:<br>
+            30 N 1st E<br>
+            Preston, ID 83263<br>
+            Or,<br>
+            999-999-9999<br>
+            www.hsentinels.com</p>
+            <img src="images/map.jpg" alt="map of local area" id="local">
+        </div>
+        &copy;2020 Heaven's Sentinels | Attributions | Jeremy Johnson <br>
+        <span id="current"></span>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

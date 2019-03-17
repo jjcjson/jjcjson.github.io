@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    background-color: lightslategray;
+    color: black;
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    height: 100%;
+}
+header {
+    background-color: white;
+    color: #000066;
+    text-align: center;
+    width: 100%;
+    border-bottom: 11px;
+    border-bottom-color: black;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    min-height: calc(100vh - 140px);
+}
+.logo img {
+    display: inline;
+    vertical-align: middle;
+    margin: 10px;
+    flex-direction: column;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #000066;
+    display: flex;
+    flex-flow: column nowrap;
+}
+a {
+    display: none;
+    width: 100%;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #99bbff;
+    color: black;
+}
+li.active a {
+    background-color: #ffff66;
+    color: black;
+}
+li.menu a {
+    display: block;
+}
+section.forecast {
+    display: none;
+}
+#form {
+    background-color: white;
+    color: black;
+    border-radius: 20px 0px;
+    border: medium solid black;
+    box-shadow: 3px 3px darkgray;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 40px;
+}
+#form fieldset {
+    border: thick #000066 dashed;
+    padding-bottom: 50px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+legend {
+    background-color: #000066;
+    color: white;
+    padding: 3px 6px;
+}
+div#dangerzone {
+    line-height: 20px;
+    line-break: strict;
+    margin: auto;
+}
+figure img, picture img {
+    max-width: 100%;
+    height: auto;
+}
+figure img.heroimage {
+    max-width: 600px;
+    margin-right: auto;
+}
+footer {
+    background-color: #000066;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    height: auto;
+    position: relative;
+    bottom: 0;
+}
+footer > div {
+    display: none;
+}
+article {
+    display: block;
+}
+.responsive a {
+    display: block;
+    float: none;
+}
+section.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+/* Home Page */
+
+article#townData {
+    border: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5%;
+    margin-top: 40px;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+#townData div {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px lightgray;
+    margin: 0;
+    grid-gap: 10px;
+    width: fit-content;
+}
+#townData h5 {
+    color: #000066;
+    font-size: 5vw;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#townData h6 {
+    color: #000066;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+#townData p {
+    margin: 0;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#townData p:first-of-type {
+    border-top: thin lightgray solid;
+}
+article#townData div:nth-of-type(1) {
+    order: 3;
+}
+article#townData div:nth-of-type(2) {
+    order: 1;
+}
+article#townData div:nth-of-type(3) {
+    order: 2;
+}
+img.homephoto {
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    bottom: 0;
+}
+div.homehero {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 10px;
+}
+.homehero img {
+    position: static;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+.homehero h2, div#wsummary {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: .3rem 2%;
+    z-index: 1;
+    top: 30%;
+    left: 5%;
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+}
+div#wsummary {
+    background-color: #000066;
+    border: thin black solid;
+    text-align: left;
+    top: 12%;
+    left: 10%;
+}

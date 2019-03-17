@@ -1,0 +1,5 @@
+@media (min-width: 670px) {
+    section.gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
