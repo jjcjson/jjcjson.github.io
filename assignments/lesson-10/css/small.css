@@ -210,3 +210,7 @@ div#wsummary {
     top: 12%;
     left: 10%;
 }
+h2 {
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+    color: white;
+}
