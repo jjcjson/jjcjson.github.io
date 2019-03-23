@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Heaven's Sentinels</title>
+    <meta name="description" content="The Home of Heaven's Sentinels, a weather site in Idaho">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="images/logo.png" alt="Heaven's Sentinels">
+            <div class="title"><h1 class="website-title">Heaven's Sentinels</h1>
+                <i>Ever Vigilant, Ever Watchful</i>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id="important" class="nav">
+            <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
+            <li class="active nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="preston.html">Preston</a></li>
+            <li class="nav"><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="nav"><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="nav"><a href="stormcenter.html">Storm Center</a></li>
+            <li class="nav"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="homepage">
+        <div class="homehero">
+            <img alt="A beautiful lake with fog descending down" src="images/foglake400.jpg" sizes="90vw"
+                srcset="images/foglake900.jpg 800w, images/foglakebig.jpg 1200w">
+            <h2>Bringing the World the Heavenly News</h2>
+        </div>
+        <!--Begin JSON Town DATA-->
+        <article id="townData">
+
+        </article>
+        <!--END JSON Town DATA-->
+        
+    </main>
+    <footer>
+        <div>
+            <p>Contact us at:<br>
+            30 N 1st E<br>
+            Preston, ID 83263<br>
+            Or,<br>
+            999-999-9999<br>
+            <a href="index.html">www.hsentinels.com</a></p>
+            <img src="images/map.jpg" alt="map of local area" id="local">
+        </div>
+        &copy;2020 Heaven's Sentinels | Attributions | Jeremy Johnson <br>
+        <span id="current"></span>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+</html>

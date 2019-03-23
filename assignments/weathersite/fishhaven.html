@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Fish Haven Weather Page</title>
+    <meta name="description" content="Describes the weather for the Fish Haven township">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="images/logo.png" alt="Heaven's Sentinels">
+            <div class="title"><h1 class="website-title">Heaven's Sentinels</h1>
+                <i>Ever Vigilant, Ever Watchful</i>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id="important" class="nav">
+            <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="preston.html">Preston</a></li>
+            <li class="nav"><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="active nav"><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="nav"><a href="stormcenter.html">Storm Center</a></li>
+            <li class="nav"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town_name">Fish Haven</h2>
+        <hr>
+        <div class="homehero">
+            <figure>
+                <img src="images/hero300.jpeg" alt="hero image" class="heroimage" sizes="90vw"
+                    srcset="images/hero600.jpeg 800w, images/hero1000.jpg 1200w">
+            </figure>
+            <div id="wsummary">
+                <h4>Weather Summary</h4>
+                <p id="cond"></p>
+                <p id="temp"></p>
+                <p id="humid"></p>
+                <p id="wind"></p>
+                <p id="chill"></p>
+                <p id="direction"></p>
+            </div>
+        </div>
+        <hr>
+        <section class="forecast">
+            <h2>5 DAY FORECAST</h2>
+            <table class="forecast">
+                <thead>
+                    <tr>
+                        <th><span id="day1"></span></th>
+                        <th><span id="day2"></span></th>
+                        <th><span id="day3"></span></th>
+                        <th><span id="day4"></span></th>
+                        <th><span id="day5"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="icon"><img id="1i" alt="day 1 forecast"></td>
+                        <td class="icon"><img id="2i" alt="day 2 forecast"></td>
+                        <td class="icon"><img id="3i" alt="day 3 forecast"></td>
+                        <td class="icon"><img id="4i" alt="day 4 forecast"></td>
+                        <td class="icon"><img id="5i" alt="day 5 forecast"></td>
+                    </tr>
+                    <tr>
+                        <td><span id="1t"></span></td>
+                        <td><span id="2t"></span></td>
+                        <td><span id="3t"></span></td>
+                        <td><span id="4t"></span></td>
+                        <td><span id="5t"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <!--JSON EVENT SECTION-->
+        <article>
+
+        </article>
+        <hr>
+            <article>
+                <h3>Warm Weather Wandering In</h3>
+                <i>By Juniper B. Jones</i>
+                <p>Thank goodness, the cold weather is finally on its way out. We have a warm front heading in that should put smiles on everyone's faces. As welcome as this warm weather is, no one appreciates it more than our local mayor. Mayor Smith has been planning all winter for the festival this weekend and cold weather would've put a freeze to all of his plans. Smith admits to saying, "I'd light the whole city on fire if I had to! These roads need to be clear for our big parade!" Luckily, our town of Preston will keep on standing because of this beautiful weather.</p>
+            </article>
+        <hr>
+            <article>
+                <h3>Litter of Puppies Found!</h3>
+                <i>By Kent Kingsleigh</i>
+                <p>Good families wanted! Ol' Farmer Higgins found a litter of puppies earlier this week behind the cafe on third street. "I was just eating my sandwich, and I heard some noises out back. I didn't think much but to just check it out. I'm so glad I did! These buggers are so cute!" Fortunately for all of us, Farmer Higgins can't house all of them and is putting up most of them up for adoption. Families wishing to adopt puppies are encouraged to inquire at the Police Station.</p>
+            </article>
+    </main>
+    <footer>
+        <div>
+            <p>Contact us at:<br>
+            30 N 1st E<br>
+            Preston, ID 83263<br>
+            Or,<br>
+            999-999-9999<br>
+            <a href="index.html">www.hsentinels.com</a><br>
+            <i>This site uses OpenWeatherMap for weather data</i></p>
+            <img src="images/map.jpg" alt="map of local area" id="local">
+        </div>
+        &copy;2020 Heaven's Sentinels | Attributions | Jeremy Johnson <br>
+        <span id="current"></span>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/fish.js"></script>
+</body>
+</html>
