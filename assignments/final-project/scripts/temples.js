@@ -23,13 +23,15 @@ function showData(jsonObj) {
         var myArticle = document.createElement('div');
         var myH2 = document.createElement('h2');
         var myh4 = document.createElement('h4');
+        var myh42 = document.createElement('h4');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
 
         myH2.textContent = data[i].name;
-        myh4.textContent = data[i].phone + br + data[i].email;
+        myh4.textContent = data[i].phone;
+        myh42.textContent = data[i].email;
         myPara1.textContent = data[i].address;
         myPara2.textContent = services(data[i].services);
         myPara3.textContent = schedule(data[i].schedule);
@@ -76,16 +78,19 @@ function services(array) {
     }
     else {
         if (array[0] == true) {
-            output += "Clothing rental available" + br;
+            output += "Clothing rental available, ";
         }
         if (array[1] == true) {
-            output += "Cafeteria available" + br;
+            output += "Cafeteria available, ";
         }
         if (array[2] == true) {
-            output += "Patron Housing Available" + br;
+            output += "Patron Housing Available, ";
         }
-        if (array[0] == true) {
-            output += "Distribution Center Nearby" + br;
+        if (array[3] == true && array[2] == true) {
+            output += "and ";
+        }
+        if (array[3] == true) {
+            output += "Distribution Center Nearby";
         }
         return output;
     }
