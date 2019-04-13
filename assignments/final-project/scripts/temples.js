@@ -13,6 +13,7 @@ var atl = 0;
 var aba = 0;
 var bern = 0;
 var newp = 0;
+var br = document.createElement('br');
 
 
 function showData(jsonObj) {
@@ -28,7 +29,7 @@ function showData(jsonObj) {
         var myPara4 = document.createElement('p');
 
         myH2.textContent = data[i].name;
-        myh4.textContent = data[i].phone + "<br>" + data[i].email;
+        myh4.textContent = data[i].phone + br + data[i].email;
         myPara1.textContent = data[i].address;
         myPara2.textContent = services(data[i].services);
         myPara3.textContent = schedule(data[i].schedule);
@@ -75,17 +76,18 @@ function services(array) {
     }
     else {
         if (array[0] == true) {
-            output += "Clothing rental available<br>";
+            output += "Clothing rental available" + br;
         }
         if (array[1] == true) {
-            output += "Cafeteria available<br>";
+            output += "Cafeteria available" + br;
         }
         if (array[2] == true) {
-            output += "Patron Housing Available<br>";
+            output += "Patron Housing Available" + br;
         }
         if (array[0] == true) {
-            output += "Distribution Center Nearby<br>";
+            output += "Distribution Center Nearby" + br;
         }
+        return output;
     }
 }
 function schedule(array) {
@@ -96,7 +98,7 @@ function schedule(array) {
             output += "and " + array[i] + ".";
         }
         else {
-            output += array[i] + " ";
+            output += array[i] + ", ";
         }
     }
     return output;
