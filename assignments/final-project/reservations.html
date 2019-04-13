@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Temple Inn & Suites | Reservations</title>
+    <meta name="description" content="Enjoy a quiet stay near the temple and relax away from the cares of the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Jeremy Johnson">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family= Roboto+Condensed|Scope+One ">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script>function ratinginput(rating) {document.getElementById('rvalue').innerHTML = rating;}</script>
+</head>
+<body>
+    <header>
+        <img src="files/atlsun300.jpg" alt="Atlanta Temple with the sun setting behind it" class="headimg" sizes="100vw"
+            srcset="files/atlsun600.jpg 600w, files/atlsun900.jpg 900w, files/bern1080.jpg 1080w">
+        <h1 class="head"><img src="files/templelogowhite.png" alt="logo" class="hlogo logo">Temple Inn & Suites</h1>
+    </header>
+    <nav>
+        <ul id="important" class="nav main-nav">
+            <li class="menu" id="nav"><a class="dropbtn" href="javascript:void(0);" onclick="hamburger()">&#9776; Menu</a></li>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="temples.html">Temples</a></li>
+            <li class="active nav"><a href="reservations.html">Reservation</a></li>
+            <li class="nav"><a href="services.html">Services</a></li>
+            <li class="nav"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="form">
+        <h2>Welcome to the <img src="files/templelogoblack.png" class="logo" alt="logo"> Temple Inn & Suites</h2>
+        <h4>Enjoy a wonderful stay!</h4>
+        <form id="reservation" action="contact.html">
+            <fieldset>
+                <legend>
+                    Guest Information
+                </legend>
+                
+                <label for="fname">Guest or Party Name:</label>
+                <input type="text" required pattern="[A-Z][A-Za-z -._]+{5,99}" minlength="5" name="fullname" id="fname"><br>
+                
+                <label for="femail">Email:</label>
+                <input type="email" name="email" id="femail"><br>
+                
+                <label for="ftel">Preferred Phone:</label>
+                <input type="tel" required name="telephone" id="ftel"><br>
+                
+                <label for="fhome">Visiting From:</label>
+                <input type="text" required pattern="[A-Z][A-Za-z -._]+{5,99}" minlength="3" name="home" id="fhome"><br>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Reservation Details
+                </legend>
+
+                <label for="fhotel">Hotel:</label>
+                <select name="hotel" id="fhotel"><br>
+                    <option value="" disabled selected>--Please Select a Hotel--</option>
+                    <option value="aba">Aba, Nigeria</option>
+                    <option value="atlanta">Atlanta, Georgia</option>
+                    <option value="bern">Bern, Switzerland</option>
+                    <option value="newport">Newport Beach, California</option>
+                </select>
+
+                <label for="fdate">Arrival Date:</label>
+                <input type="date" name="stayduration" id="fdate"><br>
+                <label for="fdate2">Departure Date:</label>
+                <input type="date" name="stayduration2" id="fdate2"><br>
+
+                <label for="fguests">Number of Guests:</label><span id="rvalue">2</span>
+                <input type="range" name="guestsno" id="fguests" value="2" min="1" max="20" step="1" oninput="ratinginput(this.value)" onchange="ratinginput(this.value)">
+
+                <label for="froom">Room Type:</label>
+                <select name="room" id="froom"><br>
+                    <option value="" disabled selected>--Please Select a Room--</option>
+                    <option value="2queen">2 Queen Bedroom</option>
+                    <option value="1king">1 King Bedroom</option>
+                    <option value="kit2q">2 Queen w/ Kitchenette</option>
+                    <option value="kitk">1 King w/ Kitchenette</option>
+                    <option value="family">2 Bedroom Suite w/ 1 King and 4 Twin</option>
+                    <option value="vip">Honeymoon Suite w/ 1 King and Kitchenette</option>
+                    <option value="multiple">Multiple Rooms (Comments)</option>
+                </select>
+
+                <label for="fcomments">Special Accommodations or Comments:</label>
+                <textarea name="comments" id="fcomments" rows="6" cols="50" wrap="hard"></textarea><br>
+            </fieldset>
+            <button class="submit" form="reservation">Make a Reservation</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2019 Temple Inn & Suites <img src="files/templelogowhite.png" class="logo" alt="Temple Inn & Suites Logo"> | 4800 Montgomery Ln #300, Bethesda, MD 20814<br>
+        <a href="https://lds.org">Visit the Church Website</a><br>
+        <a href="resources.html">Resources</a><br>
+        <span id="current"></span>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+</body>
+</html>

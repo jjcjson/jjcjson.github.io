@@ -1,0 +1,238 @@
+header, h1, h2, h3, h4 {
+    font-family: 'Scope One';
+}
+
+body {
+    font-family: 'Roboto Condensed';
+    background-color: #f2f2e8;
+}
+main {
+    min-height: calc(100vh - 40px);
+}
+
+/* LOGO */
+img.logo {
+    max-height: 20px;
+    width: auto;
+    scale: 1;
+}
+img.hlogo {
+    max-height: 75px;
+    display: none;
+}
+/* Header */
+header {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+header img {
+    width: 100%;
+    position: static;
+    height: auto;
+    scale: 1;
+    top: 0;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+    top: 200px;
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+/* NAV */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #006680;
+    border-bottom: thin #006680 solid;
+    box-shadow: 0px 2px 3px rgb(0,0,0,.4);
+}
+.nav a {    
+    display: none;
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+li.active a {
+    background-color: white;
+    color: #006680;
+}
+.nav a:hover {
+    background-color: black;
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+}
+.menu a {
+    display: block;
+}
+.responsive a {
+    display: block;
+}
+/* Main */
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+main.form {
+    width: 60%;
+}
+main.resources, main.contact {
+    text-align: center;
+}
+main.resources a {
+    padding: 7px 15px;
+    margin: 20px;
+    text-decoration: none;
+    color: #006680;
+}
+main.resources a:hover {
+    background-color: #006680;
+    color: white;
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+}
+/* HOME */
+main.home {
+    width: 80%;
+}
+main.home div {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px 15px;
+    border: #006680 solid medium;
+}
+div.reznow a, div.contact a, .services div a {
+    border-radius: 10px;
+    background-color: #006680;
+    margin: auto;
+    padding: 7px 15px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+div.reznow a:hover, div.contact a:hover, .services div a:hover {
+    background-color: white;
+    border: medium solid #006680;
+    color: #006680;
+}
+section.home div.funfact {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+section.home article {
+    margin-top: 0;
+    padding-top: 0;
+}
+.funfact img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: .8;
+}
+.funfact h4 {
+    position: absolute;
+    top: 30%;
+}
+/* CONTACT */
+main.contact {
+    width: 80%;
+    background-color: white;
+    border: medium solid #006680;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 3px rgb(0,0,0,.4);
+}
+div.contact {
+    padding-bottom: 20px;
+}
+div.contact img {
+    max-width: 100%;
+    scale: 1;
+    max-height: 500px;
+    box-shadow: 0px 2px 3px rgb(0,0,0,.4);
+}
+/* SERVICES */
+main.services, main.missionary, main.wedding {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+main.services div, main.missionary div, main.wedding div {
+    background-color: white;
+    border: #006680 solid medium;
+    box-shadow: 0px 2px 3px rgb(0,0,0,.4);
+    margin: 10px;
+    text-align: center;
+}
+main.missionary div, main.wedding div {
+    margin: auto;
+    width: auto;
+}
+main.missionary div ul, main.wedding div ul, main.services ul {
+    text-align: left;
+}
+main.missionary h2, main.wedding h2 {
+    padding: 7px 15px;
+}
+figure {
+    max-width: 100%;
+    scale: 1;
+    margin: 20px;
+}
+.services div p {
+    margin: 15px 7px;
+}
+/* FORM */
+input, textarea, select {
+    width: 100%;
+}
+fieldset {
+    border: #006680 medium solid;
+    background-color: white;
+    padding: 7px 15px;
+    box-shadow: 2px 2px 3px rgb(0,0,0,.4);
+    margin-bottom: 25px;
+    width: 100%;
+}
+legend {
+    border: #006680 medium solid;
+    padding: 7px 15px;
+    background-color: #006680;
+    color: white;
+    text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin-bottom: 25px;
+    padding: 7px 15px;
+}
+/* Footer */
+footer {
+    background-color: #006680;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+footer a {
+    color: white;
+}

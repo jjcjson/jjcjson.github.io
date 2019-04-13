@@ -1,0 +1,100 @@
+{
+    "temples": [
+      {
+        "name": "Newport Beach",
+        "address": "2300 Bonita Canyon Dr, Newport Beach, CA 92660-9118",
+        "schedule": [
+          530,
+          700,
+          830,
+          1000,
+          1200,
+          1330,
+          1500,
+          1700,
+          1830,
+          2000
+          ],
+        "phone": "(1)949-644-1820",
+        "services": [
+          false,
+          false,
+          false,
+          false
+          ],
+        "email": "newport@ldsmail.org",
+        "dedicated": 2005,
+        "id": 5376890
+      },
+      {
+        "name": "Aba Nigeria",
+        "address": "72-80 Okpu-Umuobo Rd, Aba, Abia State Nigeria",
+        "phone": "(234)80-3903-4804",
+        "schedule": [
+          830,
+          1030,
+          1230,
+          1430,
+          1630,
+          1830
+          ],
+        "services": [
+          false,
+          false,
+          true,
+          true
+          ],
+        "email": "aba@ldsmail.org",
+        "dedicated": 2005,
+        "id": 2353151
+      },
+      {
+        "name": "Bern Switzerland",
+        "address": "Tempelstrasse 2, CH-3052 Zollikofen, Switzerland",
+        "phone": "(41)31-915-5252",
+        "schedule": [
+          800,
+          915,
+          1030,
+          1145,
+          1300,
+          1415,
+          1530,
+          1800,
+          1915,
+          2015
+          ],
+        "services": [
+          true,
+          false,
+          true,
+          true
+          ],
+        "email": "bern@ldsmail.org",
+        "dedicated": 1992,
+        "id": 7285212
+      },
+      {
+        "name": "Atlanta",
+        "address": "6450 Barfield Rd NE, Sandy Springs GA 30328-4283",
+        "phone": "(1)770-393-3698",
+        "email": "atlanta@ldsmail.org",
+        "schedule": [
+          1000,
+          1100,
+          1200,
+          1800,
+          1900,
+          2000
+          ],
+        "services": [
+          false,
+          false,
+          false,
+          true
+          ],
+        "dedicated": 1983,
+        "id": 4180439
+      }
+    ]
+  }
