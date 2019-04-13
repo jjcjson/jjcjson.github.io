@@ -56,22 +56,22 @@
     .center {
         grid-area: 1 / 2 / 3 / 3;
     }
-    /* SERVICES */
-    main.services {
+    /* SERVICES & TEMPLES */
+    main.services, main.temples {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
         grid-gap: 20px;
     }
-    .amenities {
+    .amenities, #atl {
         grid-area: 1 / 1 / 2 / 2;
     }
-    .ftmish {
+    .ftmish, #newp {
         grid-area: 2 / 2 / 3 / 3;
     }
-    .wedding {
+    .wedding, #bern {
         grid-area: 2 / 1 / 3 / 2;
     }
-    .fhistory {
+    .fhistory, #aba {
         grid-area: 1 / 2 / 2 / 3;
     }
     main.missionary div {

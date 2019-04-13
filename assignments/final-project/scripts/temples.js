@@ -1,6 +1,6 @@
 // TEMPLE PAGE
 var requestURL = 'json/temples.json';
-var article = document.querySelector('article');
+var article = document.querySelector('main');
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';

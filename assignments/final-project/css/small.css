@@ -101,10 +101,10 @@ main.resources a:hover {
     text-shadow: -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
 }
 /* HOME */
-main.home {
+main.home, main.temples {
     width: 80%;
 }
-main.home div {
+main.home div, main.temples div {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -193,7 +193,7 @@ figure {
     scale: 1;
     margin: 20px;
 }
-.services div p {
+.services div p, .temples div p {
     margin: 15px 7px;
 }
 /* FORM */
