@@ -104,7 +104,7 @@ main.resources a:hover {
 main.home, main.temples {
     width: 80%;
 }
-main.home div, main.temples div {
+main.home div, div.templeInfo {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -112,6 +112,9 @@ main.home div, main.temples div {
     margin-top: 20px;
     padding: 20px 15px;
     border: #006680 solid medium;
+}
+div.templeInfo {
+    width: 100%;
 }
 div.reznow a, div.contact a, .services div a {
     border-radius: 10px;

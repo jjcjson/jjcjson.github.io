@@ -39,6 +39,7 @@ function showData(jsonObj) {
 
         myArticle.appendChild(myH2);
         myArticle.appendChild(myh4);
+        myArticle.appendChild(myh42);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
