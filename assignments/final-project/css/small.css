@@ -114,7 +114,8 @@ main.home div, div.templeInfo {
     border: #006680 solid medium;
 }
 div.templeInfo {
-    width: 100%;
+    width: 80%;
+    margin-right: 20px;
 }
 div.reznow a, div.contact a, .services div a {
     border-radius: 10px;
